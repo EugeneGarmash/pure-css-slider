@@ -43,8 +43,9 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  left: 2.5px;
-  top: 2.5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -55%);
   background-color: #435777;
   border-radius: 50%;
 }
