@@ -1,6 +1,7 @@
 # pure-css-slider
 
 You can check out this pure CSS slider on the folling link: https://eugenegarmash.github.io/pure-css-slider/ .
+
 Вы можете просмотреть слайдеры по сследующей ссылке: https://eugenegarmash.github.io/pure-css-slider/ .
 
 1. Особенности слайдеров
