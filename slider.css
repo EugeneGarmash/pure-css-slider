@@ -1,0 +1,172 @@
+/* Выдвинуть либо через opacity и z-index или через tansform: translate; */
+
+.wrapper {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.slider__controls {
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider__controls label {
+  content: "";   
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  bottom: 5px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #435777;
+  border-radius: 50%;
+}
+
+.slider__controls label::before {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 2.5px;
+  top: 2.5px;
+  background-color: #435777;
+  border-radius: 50%;
+}
+
+#a:checked ~ .slider__controls label[for="a"]::before,
+#b:checked ~ .slider__controls label[for="b"]::before,
+#c:checked ~ .slider__controls label[for="c"]::before,
+#d:checked ~ .slider__controls label[for="d"]::before {
+  visibility: visible;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  display: block;
+  font-size: 20px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+}
+
+.book {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(400px);
+}
+
+
+
+#a:checked ~ .wrapper__inner .book:nth-child(1),
+#b:checked ~ .wrapper__inner .book:nth-child(2),
+#c:checked ~ .wrapper__inner .book:nth-child(3),
+#d:checked ~ .wrapper__inner .book:nth-child(4){
+  transform: translate(0);
+  transition-duration: 0.3s;
+} 
+
+/* Или через z-index*/
+ 
+/*.wrapper {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.slider__controls {
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.slider__controls label {
+  content: "";   
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  bottom: 5px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #435777;
+  border-radius: 50%;
+}
+
+.slider__controls label::before {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 2.5px;
+  top: 2.5px;
+  background-color: #435777;
+  border-radius: 50%;
+}
+
+#a:checked ~ .slider__controls label[for="a"]::before,
+#b:checked ~ .slider__controls label[for="b"]::before,
+#c:checked ~ .slider__controls label[for="c"]::before,
+#d:checked ~ .slider__controls label[for="d"]::before {
+  visibility: visible;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  display: block;
+  font-size: 20px;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+}
+
+.book {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.book-1 {
+  z-index: 1;
+}
+
+#b:checked ~ .wrapper__inner .book:nth-child(2),
+#c:checked ~ .wrapper__inner .book:nth-child(3),
+#d:checked ~ .wrapper__inner .book:nth-child(4){
+  z-index: 2;
+} */
+
+
