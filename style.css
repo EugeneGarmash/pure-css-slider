@@ -54,7 +54,7 @@ h1 {
   height: 10px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -45%);
   background-color: #435777;
   border-radius: 50%;
 }
