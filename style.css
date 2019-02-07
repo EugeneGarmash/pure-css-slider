@@ -46,32 +46,20 @@ h1 {
   border-radius: 50%;
 }
 
-[class^="wrapper"] .slider__controls label::before {
-  visibility: hidden;
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-45%, -45%);
-  background-color: #435777;
-  border-radius: 50%;
-}
-
-#a:checked ~ .slider__controls label[for="a"]::before,
-#b:checked ~ .slider__controls label[for="b"]::before,
-#c:checked ~ .slider__controls label[for="c"]::before,
-#d:checked ~ .slider__controls label[for="d"]::before,
-#o:checked ~ .slider__controls label[for="o"]::before,
-#p:checked ~ .slider__controls label[for="p"]::before,
-#q:checked ~ .slider__controls label[for="q"]::before,
-#r:checked ~ .slider__controls label[for="r"]::before,
-#s:checked ~ .slider__controls label[for="s"]::before,
-#t:checked ~ .slider__controls label[for="t"]::before,
-#u:checked ~ .slider__controls label[for="u"]::before,
-#w:checked ~ .slider__controls label[for="w"]::before{
-  visibility: visible;
+#a:checked ~ .slider__controls label[for="a"],
+#b:checked ~ .slider__controls label[for="b"],
+#c:checked ~ .slider__controls label[for="c"],
+#d:checked ~ .slider__controls label[for="d"],
+#o:checked ~ .slider__controls label[for="o"],
+#p:checked ~ .slider__controls label[for="p"],
+#q:checked ~ .slider__controls label[for="q"],
+#r:checked ~ .slider__controls label[for="r"],
+#s:checked ~ .slider__controls label[for="s"],
+#t:checked ~ .slider__controls label[for="t"],
+#u:checked ~ .slider__controls label[for="u"],
+#w:checked ~ .slider__controls label[for="w"]{
+   background-image: linear-gradient(to bottom, #435777 60%,
+#ffffff);
 }
 
 [class^="wrapper"] img {
